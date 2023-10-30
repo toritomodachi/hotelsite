@@ -6,6 +6,8 @@
     <title>파크하비오</title>
     <link rel="stylesheet" href="./2second-page/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
 </head>
 <body>
     <header>
@@ -97,7 +99,7 @@
         <hr id="map">
         <div class="img">
           <p><span style="font-size: 25px;">지도</span><br></p>
-          <img class="map" src="./css/Group 30 (1).png" alt="지도">
+          <a href="#" class="mapclick"><img class="map" src="./css/Group 30 (1).png" alt="지도"></a>
         </div>
     </div>
     </main>
@@ -105,5 +107,17 @@
       <address style="padding-top: 20px;">주소 : 서울특별시 송파구 송파대로 111, 파크하비오</address><p>Tel : 1600-0666</p><p>FAX : 02-543-2909</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $('.mapclick').click(function(){
+        Swal.fire({
+      imageUrl: './css/modalmap.png',
+      imageHeight: 200,
+      imageAlt: '지도 이미지',
+      confirmButtonText: '닫기',
+  		confirmButtonColor:'#00ABBC',
+    });
+      })
+    </script>
+  </body>
 </html>

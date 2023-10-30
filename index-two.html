@@ -111,23 +111,23 @@
     <script>
       $('.mapclick').click(function(){
         Swal.fire({
-      imageUrl: './css/modalmap.png',
-      imageHeight: 200,
-      imageAlt: '지도 이미지',
-      confirmButtonText: '닫기',
-  		confirmButtonColor:'#00ABBC',
-     willOpen: () => {
-      setCSSLink()
-  }
-  })
-})
+          imageUrl: './css/modalmap.png',
+          imageHeight: 200,
+          imageAlt: '지도 이미지',
+          confirmButtonText: '닫기',
+  		    confirmButtonColor:'#00ABBC',
+          willOpen: () => {
+            setCSSLink()
+          }
+        })
+      })
 
-function setCSSLink() {
-  var ss = document.createElement('link');
-  ss.rel = "stylesheet";
-  ss.href = "//cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal/minimal.css";
-  document.head.appendChild(ss);
-}
+      function setCSSLink() {
+        var ss = document.createElement('link');
+        ss.rel = "stylesheet";
+        ss.href = "//cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal/minimal.css";
+        document.head.appendChild(ss);
+      }
     </script>
   </body>
 </html>

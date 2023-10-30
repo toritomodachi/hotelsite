@@ -47,7 +47,7 @@ main::before{
     list-style: none;
     margin-bottom: 30%;
     padding: 0;
-    box-shadow: 10px 10px 10px #5e5e5e;
+    box-shadow: 10px 10px 10px #3f3f3f;
     padding-bottom: 20px;
     padding-top: 10px;
     background-color: hsl(185, 74%, 88%);

@@ -143,7 +143,8 @@
     width: 80%;
     margin-left: 5%;
     margin-bottom: 5%;
-    font-size: 15px;
+    font-size: 15.5px;
+    font-family: '20';
   }
   
   .open-content .text h1, .open-content .text p {
@@ -249,5 +250,11 @@
     
     .open-content img {
       margin-top: 40px;
+    }
+  }
+  @media screen and (max-width:375px) {
+    
+    .open-content .text {
+        font-size: 13.5px;
     }
   }

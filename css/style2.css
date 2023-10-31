@@ -1,10 +1,12 @@
 *,html{
     box-sizing: border-box;
 }
+main {
+    background-color: rgb(232, 250, 252);
+}
 .container{
     padding-top: 10%;
     text-align: center;
-    background-color: rgb(232, 250, 252);
 }
 .navbar-custom{
     background-color: #ffffc7;
@@ -29,6 +31,28 @@
 }
 footer{
     background-color: #3b3b3b;
+}
+.map{
+    width: 100%;
+}
+.container > div > p:nth-child(1) {
+    /* background-color: rgb(193, 255, 47);
+    box-shadow: 0px 0px 0px 10px;
+    text-align: center;
+    width: 300px;
+    height: 60px;
+    border: 2px solid #00ABBC;
+    border-radius: 10px;
+    border-bottom: none; */
+    padding: 1em 1em; 
+    margin: 2em 10px; 
+    font-weight: bold; 
+    color: #565656; 
+    background: #E4FCFF; 
+    box-shadow: 0px 0px 0px 10px #E4FCFF; 
+    border: dashed 2px #1DC1D6; 
+    text-align: center;
+    border-radius: 8px;
 }
 @media screen and (max-width:425px) and (min-width:375px){
     main{

@@ -13,7 +13,7 @@
     content: "";
   }
   .navbar-custom{
-    background-color: #01c4d6;
+    background-color: #ffffc7;
 }
 .navbar-custom .navbar-toggler{
     border: none;
@@ -22,6 +22,12 @@
     margin: 0;
     padding: 0;
     text-align: center;
+}
+.navbar-brand > img {
+  position: absolute;
+  top: -8px;
+  width: 140px;
+  height: 70px;
 }
   p {
     line-height: 1.5;

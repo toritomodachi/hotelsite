@@ -1,6 +1,11 @@
 *,html{
     box-sizing: border-box;
 }
+.container{
+    padding-top: 10%;
+    text-align: center;
+    background-color: rgb(232, 250, 252);
+}
 .navbar-custom{
     background-color: #00ABBC;
 }

@@ -137,6 +137,9 @@ footer{
  .card1:nth-child(4):before {
 	 background-image: url(./img/deathtostock-03.png);
 }
+.card1:nth-child(5):before {
+	background-image: url(./img/deathtostock-04.png);
+}
  .content1 {
 	 position: relative;
 	 display: flex;

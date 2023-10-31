@@ -20,7 +20,7 @@
 	 grid-gap: 1rem;
 	 padding: 1rem;
 	 margin: 0 auto;
-     margin-top: 100px;
+     margin-top: 80px;
 	 font-family: var(--font-sans);
 }
 /* 
@@ -92,7 +92,7 @@ footer{
 	 text-align: center;
 	 color: whitesmoke;
 	 background-color: whitesmoke;
-     margin-bottom: 50px;
+     margin-bottom: 60px;
 	 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
  @media (min-width: 600px) {

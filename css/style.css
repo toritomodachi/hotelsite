@@ -20,59 +20,30 @@
 	 grid-gap: 1rem;
 	 padding: 1rem;
 	 margin: 0 auto;
-     margin-top: 80px;
+     margin-top: 30px;
 	 font-family: var(--font-sans);
 }
-/* 
-** Layout, Text & Colors 
-*/
-.navbar-custom{
-    background-color: #ffffc7;
-}
-.navbar-custom .navbar-toggler{
-    border: none;
-}
-.navbar-nav > .nav-item > .nav-link{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-.navbar-brand > img {
-  position: absolute;
-  top: -8px;
-  width: 140px;
-  height: 70px;
-}
-  ul{
-    list-style: none;
-    text-align: center;
-}
-ul > h1{
-  font-size: 30px;
-}
+
 li{
   margin-top: 15px;
   font-size: 15px;
 }
-   
+.content{
+	text-align: center;
+}
 .hr{
     width: 90%;
     margin-left : auto;
   margin-right : auto;
 }
-.gang{
-    font-size: 24px;
-    text-decoration: underline;
-    color: rgb(229, 255, 0);
-}
 .red{
-    color: rgb(208, 255, 0);
+	color: rgb(208, 255, 0);
 }
 footer{
   width: 100%;
   background-color: #3b3b3b;
 }
- @media (min-width: 600px) {
+ @media (min-width: 650px) {
 	 .page-content1 {
 		 grid-template-columns: repeat(2, 1fr);
 	}
@@ -89,16 +60,16 @@ footer{
 	 overflow: hidden;
 	 padding: 1rem;
 	 width: 100%;
-	 text-align: center;
-	 color: whitesmoke;
+	 color: rgb(255, 255, 255);
 	 background-color: whitesmoke;
      margin-bottom: 60px;
 	 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
- @media (min-width: 600px) {
+ @media (min-width: 650px) {
 	 .card1 {
 		 height: 350px;
-	}
+		}
+	
 }
  .card1:before {
 	 content: '';
@@ -121,7 +92,7 @@ footer{
 	 width: 100%;
 	 height: 200%;
 	 pointer-events: none;
-	 background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.320) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.540) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.790) 100%);
+	 background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.019) 11.7%, rgba(0, 0, 0, 0.134) 22.1%, rgba(0, 0, 0, 0.172) 31.2%, rgba(0, 0, 0, 0.223) 39.4%, rgba(0, 0, 0, 0.282) 46.6%, rgba(0, 0, 0, 0.349) 53.1%, rgba(0, 0, 0, 0.420) 58.9%, rgba(0, 0, 0, 0.494) 64.3%, rgba(0, 0, 0, 0.568) 69.3%, rgba(0, 0, 0, 0.640) 74.1%, rgba(0, 0, 0, 0.707) 78.8%, rgba(0, 0, 0, 0.768) 83.6%, rgba(0, 0, 0, 0.821) 88.7%, rgba(0, 0, 0, 0.862) 94.1%, rgba(0, 0, 0, 0.890) 100%);
 	 transform: translateY(-50%);
 	 transition: transform calc(var(--d) * 2) var(--e);
 }
@@ -146,12 +117,8 @@ footer{
 	 flex-direction: column;
 	 align-items: center;
 	 width: 100%;
-	 padding: 1rem;
 	 transition: transform var(--d) var(--e);
 	 z-index: 1;
-}
- .content1 > * + * {
-	 margin-top: 1rem;
 }
  .title1 {
 	 font-size: 1.3rem;
@@ -162,26 +129,7 @@ footer{
 	 font-size: 1.125rem;
 	 font-style: italic;
 	 line-height: 1.35;
-}
- .btn1 {
-	 cursor: pointer;
-	 margin-top: 1.5rem;
-	 padding: 0.75rem 1.5rem;
-	 font-size: 0.65rem;
-	 font-weight: bold;
-	 letter-spacing: 0.025rem;
-	 text-transform: uppercase;
-	 color: white;
-	 background-color: black;
-	 border: none;
-}
- .btn1:hover {
-	 background-color: #0d0d0d;
-}
- .btn1:focus {
-	 outline: 1px dashed yellow;
-	 outline-offset: 3px;
-}
+ }
  @media (hover: hover) and (min-width: 600px) {
 	 .card1:after {
 		 transform: translateY(0);
@@ -215,4 +163,3 @@ footer{
 		 transition-duration: 0s;
 	}
 }
- 

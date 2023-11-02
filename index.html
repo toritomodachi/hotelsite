@@ -2,107 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>파크하비오</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <style>
+    </style>
   </head>
-<body style="background-color: rgb(176, 225, 245);">
-  <header>
-    <nav class="navbar navbar-custom fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="로고"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <img src="./img/logo.png" class="offcanvas-title" id="offcanvasNavbarLabel"alt="로고" style="width: 300px;height: 150px;">
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./index.html">홈</a>
-                  <hr>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="">객실 서비스</a>
-                  <hr>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="./index-two.html#saw">사우나</a>
-                    <hr>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="./index-two.html#yong">영화관</a>
-                    <hr>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="./index-two.html#hwi">휘트니스</a>
-                    <hr>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="./index-two.html#map">지도</a>
-                    <hr>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-</header>
+<body>
+  
 <main class="page-content1">
   <div class="card1">
     <div class="content1">
-      <ul><h1><b>객실이용 안내</b></h1>
+      <ol><h1 style="text-align: center;"><b>객실이용 안내</b></h1>
         <hr class="hr">
-      <li><p class="gang" id="ser">AM 11 : 00 ~ 체크아웃</p><br> ※ 이후 시간에는 시간당<br>10,000원씩 추가비용 발생합니다.</li>
-      <li>※ 상황에 따라 오후 3시까지 가능합니다.</li>
-      <li>객실 들어가실 때 도어센서 한번 터치하시고<br> 고객님 비밀번호 눌러주시면 됩니다<br><p class="red"><b>(ex) 4567* / 5314*</b></p></li>
-      <li><span style="text-decoration: underline;"><b>객실 내에 타월은 무료 추가가 불가합니다.</b></span></li>
-      <li>분실 및 추가시 요금이 발생합니다<br>(배쓰 타월 10,000원, 페이스 타월 5,000원)</li>
-      <li><span style="text-decoration: underline;"><b>생수 추가 시 한 병당 1,000원 입니다.</b></span></li>
-      <li><span style="text-decoration: underline;"><b>충전기는 보증금(1만원) 납입 후 대여 가능</b></span><br> (카드 불가)</li>
-      <li>호텔 내 전 객실 금연입니다. <br>(흡연 시 1박 요금 부과)</li>
-      <li>객실로 배달은 불가하지만<br> 1층에서는 픽업가능합니다.</li>
-      <li>2박 이상 이용 시 <br>DND 버튼을 누르면 객실청소 불가<br>MR 버튼을 누르면 객실 청소 가능<br>(객실 정비 요청은 오후 3시까지 가능합니다)</li>
-      <li><span style="text-decoration: underline;"><b>프런트 데스크 번호 : 3100</b></span></li>
-      <li><span style="text-decoration: underline;"><b>무료 WI-FI : "HABIO HOTEL"</b></span></li>
-      </ul>
+        <li><span class="red" style="text-decoration: underline;">체크아웃 오전 11시까지</span> (이후 비밀번호 사용불가)<br>이후에는 시간당 10,000원씩 추가비용 발생하며,<br>객실 상황에 따라 최대 오후 3시까지 가능합니다.</li>
+        <li>객실 들어가실때 <span class="red">도어센서 한번 터치하시고</span> 고객님 비밀 번호 눌러주시면 됩니다.<br><span class="red">(ex)4567* / 5314*).</span></li>
+        <li style=" font-size: 17px;"><span style="text-decoration: underline;">타월 무료 추가는 불가합니다.</span><br>분실 및 추가 시 요금 발생합니다.<br>(배쓰 타월 10,000원, 페이스 타월 5,000원)</li>
+        <li style=" font-size: 17px;"><span style="text-decoration: underline;">생수 추가 시 한 병당 1,000원 입니다.</span></li>
+        <li style=" font-size: 17px;"><span style="text-decoration: underline;">충전기는 보증금(1만원) 납입 후 대여 가능</span><br>- 카드 불가.</li>
+        <li style=" font-size: 17px;">호텔 내 전 객실 금연입니다.<br>(흡연 시 1박 요금 부과)</li>
+        <li>객실로 배달은 불가입니다.(1층에서 픽업은 가능.)</li>
+        <li><b>2박 이상 이용 시</b><br>- DND 버튼을 누르면객실청소 불가!!<br>청소를 원하실 경우 <span class="red" style="text-decoration: underline;">MR 버튼을</span> 눌러주세요.<br>(객실 정비 요청은 오후 3시까지 가능합니다.)</li>
+      </ol>
+      <p style="font-size: 25px; text-decoration: underline;">프런트 데스크 번호 : 3100</p>
+      <p style="font-size: 25px; text-decoration: underline;">무료 WI-FI : "HABIO HOTEL"</p>
     </div>
     </div>
   <div class="card1">
-      <div class="content1">
+      <div class="content1 content">
           <h2 class="title1">조식 서비스<br> - 호텔 2층에 위치</h2>
           <p class="copy1">운영시간 : 7 : 00 ~ 10 : 00<br>09 : 30분까지 입장바랍니다.<br>객실티켓 지참하시기 바랍니다.<br>룸 서비스는 제공되지 않습니다.</p>
       </div>
   </div>
   <div class="card1">
-      <div class="content1">
+      <div class="content1 content">
           <h2 class="title1">무료 주차 서비스</h2>
           <p class="copy1">체크아웃 당일 오후 10시까지 무료<br> - 횟수 제한 없이 입/출자 가능<br> 출자 전 차량등록 확인 필수!!<br>사전 미등록시 비용은 투숙객부담입니다</p>
       </div>
   </div>
   <div class="card1">
-      <div class="content1">
+      <div class="content1 content">
           <h2 class="title1">셀프 무인 락커</h2>
-          <p class="copy1">6시간 무료 사용<br>(이후 시간당 2천원 요금발생 - 카드불가)</p>
+          <p class="copy1"><br>6시간 무료 사용<br><br>(이후 시간당 2천원 요금발생 - 카드불가)</p>
       </div>
   </div>
   <div class="card1">
-    <div class="content1">
+    <div class="content1 content">
         <h2 class="title1">다른 서비스</h2>
         <p class="copy1"><a href="./index-two.html">다른 서비스 보러가기</a><br><br><a href="./index-two.html#map">지도보러가기</a></p>
     </div>
 </div>
 </main>
-
-    <footer style="color: rgb(150, 148, 148); text-align: center;">
-      <address style="padding-top: 20px;">주소 : 서울특별시 송파구 송파대로 111, 파크하비오</address><p>Tel : 1600-0666</p><p>FAX : 02-543-2909</p>
-    </footer>
-  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

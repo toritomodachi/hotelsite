@@ -47,12 +47,12 @@ footer{
     width: 100% !important;
     background: rgb(62, 62, 62,0.9); 
 }
- @media (min-width: 650px) {
+ @media (min-width: 950px) {
 	 .page-content1 {
 		 grid-template-columns: repeat(2, 1fr);
 	}
 }
- @media (min-width: 800px) {
+ @media (min-width: 1000px) {
 	 .page-content1 {
 		 grid-template-columns: repeat(4, 1fr);
 	}
@@ -69,7 +69,7 @@ footer{
      margin-bottom: 60px;
 	 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
- @media (min-width: 650px) {
+ @media (min-width: 950px) {
 	 .card1 {
 		 height: 350px;
 		}
@@ -153,7 +153,8 @@ footer{
 }
 .swal-wide {
     width: 100% !important;
-    background: rgb(62, 62, 62,0.9); 
+	height: 300px;
+    background-color: rgb(62, 62, 62,0.9); 
 }
  @media (hover: hover) and (min-width: 600px) {
 	 .card1:after {
@@ -189,3 +190,18 @@ footer{
 	}
 	
 }
+@media screen and (orientation: landscape) {
+	html {
+	  /* Rotate the content container */
+	  transform: rotate(-90deg);
+	  transform-origin: left top;
+	  /* Set content width to viewport height */
+	  width: 100vh;
+	  /* Set content height to viewport width */
+	  height: 100vw;
+	  overflow-x: hidden;
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	}
+  }

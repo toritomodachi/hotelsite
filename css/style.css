@@ -43,6 +43,10 @@ footer{
   width: 100%;
   background-color: #3b3b3b;
 }
+.swal-wide {
+    width: 100% !important;
+    background: rgb(62, 62, 62,0.9); 
+}
  @media (min-width: 650px) {
 	 .page-content1 {
 		 grid-template-columns: repeat(2, 1fr);
@@ -130,6 +134,21 @@ footer{
 	 font-style: italic;
 	 line-height: 1.35;
  }
+ .map{
+	width: 100%;
+}
+.swal2-image {
+	width: auto;
+	height: auto;
+}
+.swal2-modal {
+	width: auto;
+	height: 350px;
+}
+.swal-wide {
+    width: 100% !important;
+    background: rgb(62, 62, 62,0.9); 
+}
  @media (hover: hover) and (min-width: 600px) {
 	 .card1:after {
 		 transform: translateY(0);
@@ -162,4 +181,5 @@ footer{
 	 .card1:focus-within:before, .card1:focus-within:after, .card1:focus-within .content1, .card1:focus-within .content1 > *:not(.title1) {
 		 transition-duration: 0s;
 	}
+	
 }

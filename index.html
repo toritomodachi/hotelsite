@@ -6,6 +6,7 @@
     <title>파크하비오</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css">
     <style>
     </style>
   </head>
@@ -48,13 +49,79 @@
       </div>
   </div>
   <div class="card1">
+      <div class="content1 content">
+          <h2 class="title1">사우나, 찜질방 할인</h2>(워터킹덤 B1층)<br><br>
+          <p class="copy1">* 객실티켓 지참시 1인당 이용요금<br><span>- 사우나 : 8,000원 / 찜질방 : 10,000원</span><br>
+          <br>· 운영시간 : 07:00 ~ 23:00</p>
+      </div>
+  </div>
+  <div class="card1">
     <div class="content1 content">
-        <h2 class="title1">다른 서비스</h2>
-        <p class="copy1"><a href="./index-two.html">다른 서비스 보러가기</a><br><br><a href="./index-two.html#map">지도보러가기</a></p>
+        <h2 class="title1">무료 영화관람 이벤트</h2>(B1 - 메가박스)<br><br>
+          <p>· 객실 티켓 지참 시 영화 1편 무료!<br><span style="margin-right: 5%;">- 체크아웃 당일 오후 10시까지</span></p>
+          <p>- 관람 당일 현장 예매만 가능<span style="font-size: 12px;"> (사전 예약 불가)</span><br>
+            <b style="font-size: 13.5px;">* 3D 영화는 현장에서 추가비용 결제 후 이용 가능.</b>
+    </div>
+</div>
+<div class="card1">
+  <div class="content1 content">
+      <h2 class="title1">휘트니스 무료이용<br>(1일 1회)<br><br>
+        <p style="font-size: 20px;">· 객실티켓 지참시 무료입장 가능합니다. <br>
+          · 스크린 골프는 무료사용 불가입니다.<br>
+          * 운동복, 타월 제공 (<b style="color: rgb(208, 255, 0);text-decoration: underline;font-size: 20px;">운동화는 개인지참</b>)<br>
+          * 샤워시설 이용 가능 <br>
+            <table>
+            * <b>운영시간</b> (<b>마지막주</b> 일요일 휴관)
+              <tr>
+                <th>평일</th>
+                <td>: AM 6 ~ PM 10</td>
+              </tr>
+              <tr>
+                <th>토요일</th>
+                <td>: AM 9 ~ PM 9</td>
+              </tr>
+              <tr>
+                <th>일요일</th>
+                <td>: AM 9 ~ PM 6</td>
+              </tr>
+            </table>
+          </p>
+          <p>* TEL : 02-6925-6922</p>
+  </div>
+</div>
+  <div class="card1">
+    <div class="content1 content">
+        <h2 class="title1">지도</h2>
+        <p class="copy1"><a href="#" class="mapclick"><img class="map" src="./img/map.png" alt="지도"></a></p>
     </div>
 </div>
 </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
+  <script>
+    const imawid = window.innerWidth;
+    $('.mapclick').click(function(){
+      Swal.fire({
+        imageUrl: './img/map.png',
+        imageHeight: 230,
+        imageWidth: imawid,
+        imageAlt: '지도 이미지',
+        confirmButtonText: '닫기',
+        customClass: 'swal-wide',
+        confirmButtonColor:'#00ABBC',
+        willOpen: () => {
+          setCSSLink()
+        }
+      })
+    })
+
+    function setCSSLink() {
+      var ss = document.createElement('link');
+      ss.rel = "stylesheet";
+      ss.href = "//cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal/minimal.css";
+      document.head.appendChild(ss);
+    }
+  </script>
 </body>
 </html>

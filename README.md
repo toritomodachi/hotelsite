@@ -1,2 +1,4 @@
 # 호텔 사이트
-> ![Alt text](https://cdn.guff.com/site_0/media/33000/32194/items/157a5b0737f450fcb3caee8c.jpg)https://cdn.guff.com/site_0/media/33000/32194/items/157a5b0737f450fcb3caee8c.jpg)
+> 저기요 지나가는 당신 혹시 개발자 인가요?
+> 그렇다면 이런 말이 있죠
+> 버그보고 놀란가슴 오타보고 놀란다

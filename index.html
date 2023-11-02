@@ -101,16 +101,6 @@
         myMap.style.left = '0';
         myMap.style.width = '100vh';
         myMap.style.height = '100vw';
-
-        const myButton = document.querySelector('.card1');
-        myButton.addEventListener('click', function() {
-            myMap.style.transform = 'none';
-            myMap.style.position = 'none'; 
-            myMap.style.top = 'none'; 
-            myMap.style.left = 'none'; 
-            myMap.style.width = 'none'; 
-            myMap.style.height = 'none'; 
-        });
     });
 });
 
@@ -128,6 +118,16 @@
         confirmButtonColor:'#00ABBC',
         willOpen: () => {
           setCSSLink()
+        }
+      }).then((result) => {
+        if (result.isConfirmed) {
+          const myMap = document.querySelector('html');
+          myMap.style.transform = 'none';
+          myMap.style.position = 'none'; 
+          myMap.style.top = 'none'; 
+          myMap.style.left = 'none'; 
+          myMap.style.width = 'none'; 
+          myMap.style.height = 'none'; 
         }
       })
     })

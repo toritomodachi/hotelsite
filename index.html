@@ -112,7 +112,7 @@
       Swal.fire({
         imageUrl: './img/map.png',
         imageHeight: 250,
-        imageWidth: imawid,
+        imageWidth: 660,
         imageAlt: '지도 이미지',
         confirmButtonText: '닫기',
         customClass: 'swal-wide',
@@ -121,15 +121,13 @@
           setCSSLink()
         }
       }).then((result) => {
-        if (result.isConfirmed) {
           const myMap = document.querySelector('html');
           myMap.style.transform = '';
           myMap.style.position = ''; 
           myMap.style.top = ''; 
           myMap.style.left = ''; 
           myMap.style.width = ''; 
-          myMap.style.height = ''; 
-        }
+          myMap.style.height = '';
       })
     })
 

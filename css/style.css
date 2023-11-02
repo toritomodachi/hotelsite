@@ -113,7 +113,13 @@ footer{
 	 background-image: url(./img/deathtostock-03.png);
 }
 .card1:nth-child(5):before {
-	background-image: url(./img/test2.png);
+	background-image: url(./img/deathtostock-01.png);
+}
+.card1:nth-child(6):before {
+	background-image: url(./img/deathtostock-02.png);
+}
+.card1:nth-child(7):before {
+	background-image: url(./img/deathtostock-03.png);
 }
  .content1 {
 	 position: relative;

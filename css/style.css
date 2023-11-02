@@ -8,8 +8,16 @@
  * {
 	 box-sizing: border-box;
 }
- html, body {
-	 height: 100%;
+@media (orientation: portrait) {
+	html {
+    transform: none;
+		transform-origin: top left;
+		 position: none;
+		 top: none;
+		 left: none;
+		 width: none;
+		 height: none;
+	}
 }
  body {
 	 display: grid;

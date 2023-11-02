@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  id='map'>
 <head>
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,6 +91,31 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const myMap3 = document.querySelector('.map');
+    myMap3.addEventListener('click', function() {
+        const myMap = document.querySelector('html');
+        myMap.style.transform = 'rotate(-90deg)';
+        myMap.style.position = 'absolute';
+        myMap.style.top = '100%';
+        myMap.style.left = '0';
+        myMap.style.width = '100vh';
+        myMap.style.height = '100vw';
+
+        const myButton = document.querySelector('.card1');
+        myButton.addEventListener('click', function() {
+            myMap.style.transform = 'none';
+            myMap.style.position = 'none'; 
+            myMap.style.top = 'none'; 
+            myMap.style.left = 'none'; 
+            myMap.style.width = 'none'; 
+            myMap.style.height = 'none'; 
+        });
+    });
+});
+
+
+    
     const imawid = window.innerWidth;
     $('.mapclick').click(function(){
       Swal.fire({

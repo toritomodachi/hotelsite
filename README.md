@@ -3,4 +3,4 @@
 > 그렇다면 이런 말이 있죠
 > 버그 보고 놀란가슴 오타 보고 놀란다
 <br>
-> ![Alt text](css/img/hehe-fun.png)
+![Alt text](css/img/hehe-fun.png)

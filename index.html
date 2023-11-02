@@ -107,6 +107,7 @@
 
     
     const imawid = window.innerWidth;
+    const imahid = window.innerHeight
     $('.mapclick').click(function(){
       Swal.fire({
         imageUrl: './img/map.png',
@@ -122,12 +123,12 @@
       }).then((result) => {
         if (result.isConfirmed) {
           const myMap = document.querySelector('html');
-          myMap.style.transform = 'none';
-          myMap.style.position = 'none'; 
-          myMap.style.top = 'none'; 
-          myMap.style.left = 'none'; 
-          myMap.style.width = 'none'; 
-          myMap.style.height = 'none'; 
+          myMap.style.transform = '';
+          myMap.style.position = ''; 
+          myMap.style.top = ''; 
+          myMap.style.left = ''; 
+          myMap.style.width = ''; 
+          myMap.style.height = ''; 
         }
       })
     })

@@ -2,7 +2,7 @@
 <html lang="en"  id='map'>
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>파크하비오</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -29,7 +29,7 @@
       <p class="textdeco textsizebig">프런트 데스크 번호 : 3100</p>
       <p class="textdeco textsizebig">무료 WI-FI : "HABIO HOTEL"</p>
     </div>
-    </div>
+  </div>
   <div class="card1">
       <div class="content1 content">
           <h2 class="title1">조식 서비스<br> - 호텔 2층에 위치</h2>
@@ -91,15 +91,28 @@
     </div>
 </div>
 </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
   <script>
 
 
-    
+    document.addEventListener('DOMContentLoaded', function() {
+    const myMap3 = document.querySelector('.map');
+    myMap3.addEventListener('click', function() {
+        const myMap = document.querySelector('html');
+        myMap.style.transform = 'rotate(-90deg)';
+        myMap.style.position = 'absolute';
+        myMap.style.top = '100%';
+        myMap.style.left = '0';
+        myMap.style.width = '100vh';
+        myMap.style.height = '100vw';
+    });
+});
+
+
     const imawid = window.innerWidth;
-    const imahid = window.innerHeight
+    const imahid = window.innerHeight;
     $('.mapclick').click(function(){
       Swal.fire({
         imageUrl: './img/map.png',
@@ -114,13 +127,13 @@
 
          // buttons 옵션을 사용하여 버튼을 지정
         buttons: {
-        confirm: {
-        text: '확인',
-        value: true,  // 해당 버튼을 클릭했을 때 반환할 값
-        visible: true,  // 버튼을 표시할지 여부
-        className: 'button-modal-close', // 버튼에 적용할 클래스
+          confirm: {
+          text: '확인',
+          value: true,  // 해당 버튼을 클릭했을 때 반환할 값
+          visible: true,  // 버튼을 표시할지 여부
+          className: 'button-modal-close', // 버튼에 적용할 클래스
+          },
         },
-      },
         willOpen: () => {
           setCSSLink()
         }

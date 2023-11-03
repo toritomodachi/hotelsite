@@ -8,6 +8,7 @@
  * {
 	 box-sizing: border-box;
 }
+
 @media (orientation: portrait) {
 	html {
     transform: none;
@@ -19,6 +20,7 @@
 		 height: none;
 	}
 }
+
  body {
 	 display: grid;
 	 place-items: center;
@@ -31,7 +33,6 @@
      margin-top: 30px;
 	 font-family: var(--font-sans);
 }
-
 li{
   margin-top: 15px;
   font-size: 15px;
@@ -77,12 +78,14 @@ footer{
      margin-bottom: 60px;
 	 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
+
  @media (min-width: 950px) {
 	 .card1 {
 		 height: 350px;
 		}
 	
 }
+
  .card1:before {
 	 content: '';
 	 position: absolute;
@@ -164,6 +167,7 @@ footer{
 	height: 350px;
     background-color: rgb(62, 62, 62,0.9); 
 }
+
  @media (hover: hover) and (min-width: 600px) {
 	 .card1:after {
 		 transform: translateY(0);
@@ -198,6 +202,7 @@ footer{
 	}
 	
 }
+
 @media screen and (orientation: landscape) {
 	html {
 	  /* Rotate the content container */
@@ -212,4 +217,4 @@ footer{
 	  top: 100%;
 	  left: 0;
 	}
-  }
+  }    

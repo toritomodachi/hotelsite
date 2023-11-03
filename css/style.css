@@ -52,7 +52,7 @@ li{
 	text-decoration: underline;
 }
 .textsizemi{
-	font-size: 18px;
+	font-size: 16px;
 }
 .textsize{
 	font-size: 17px;
@@ -221,6 +221,9 @@ footer{
 	}
 	.textsize{
 		font-size: 14.5px;
+	}
+	.textsizemi{
+		font-size: 14px;
 	}
 	.textsizebig{
 		font-size: 18px;
